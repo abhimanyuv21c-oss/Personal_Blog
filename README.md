@@ -1,7 +1,6 @@
 # Personal_Blog
 Creating a new Blog using Flask(web application)
 
-text
 # Personal Blog
 
 A simple personal blog web application built using Flask (Python). The blog supports a guest section for viewing articles and an admin section for managing (adding, editing, deleting) articles. Articles are stored as JSON files on the filesystem.
@@ -36,15 +35,12 @@ myblog/
 ├── requirements.txt # Python dependencies
 ├── .gitignore # Git ignore rules
 
-text
 
 ## Setup and Installation
 
 1. Clone the repository:
 git clone https://github.com/abhimanyuv21c-oss/Personal_Blog.git
 cd Personal_Blog
-
-text
 
 2. Create and activate a virtual environment:
 - On Windows:
@@ -61,26 +57,22 @@ text
 3. Install dependencies:
 pip install -r requirements.txt
 
-text
-
 4. Run the Flask application:
 python app.py
-
-text
 
 5. Open your browser at `http://localhost:5000` to view the blog.
 
 ## Usage
 
-- Visit the home page to browse articles.
-- Admin login is at `/admin/login` with hardcoded credentials in `app.py` (`admin` / `password123` by default).
-- After login, manage articles from the dashboard.
+1. Visit the home page to browse articles.
+2. Admin login is at `/admin/login` with hardcoded credentials in `app.py` (`admin` / `password123` by default).
+3. After login, manage articles from the dashboard.
 
 ## Notes
 
-- Articles are stored as JSON files inside the `articles/` folder.
-- The blog does not use a database, making it simple and portable.
-- Basic authentication is hardcoded; for production, implement proper user management.
+1. Articles are stored as JSON files inside the `articles/` folder.
+2. The blog does not use a database, making it simple and portable.
+3. Basic authentication is hardcoded; for production, implement proper user management.
 
 ## Project Repository
 Project link : https://github.com/abhimanyuv21c-oss/Personal_Blog
