@@ -1,0 +1,71 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #fafafa;
+  padding: 40px 0;
+}
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+.box {
+  border: 2px solid #333;
+  border-radius: 12px;
+  background: #fff;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 2px 2px 8px #ececec;
+}
+.blog-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.article-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.date {
+  color: #8c939a;
+  font-size: 0.95em;
+  margin-left: 14px;
+}
+.content {
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+.article-list li {
+  margin: 10px 0; padding: 0;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.add-btn {
+  float: right;
+  font-size: 1em;
+  padding: 4px 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #eee;
+  margin-left: 10px;
+  text-decoration: none;
+}
+form-box input, form-box textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+form-box button, .add-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+form-box button:hover, .add-btn:hover { background: #444; }
+.error { color: red; margin-bottom: 12px; }
+.admin-flex { display: flex; gap: 2em; }

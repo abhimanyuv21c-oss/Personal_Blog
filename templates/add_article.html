@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ "Edit Article" if article else "New Article" }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="box form-box">
+    <h2>{{ "Update Article" if article else "New Article" }}</h2>
+    <form method="post">
+      <input type="text" name="title" placeholder="Article Title" value="{{ article.title if article else '' }}"><br>
+      <input type="date" name="date" value="{{ article.date if article else '' }}"><br>
+      <textarea name="content" rows="7" placeholder="Content">{{ article.content if article else '' }}</textarea><br>
+      <button type="submit">{{ "Update" if article else "Publish" }}</button>
+    </form>
+    <a href="{{ url_for('dashboard') }}">Back</a>
+  </div>
+</div>
+</body>
+</html>
